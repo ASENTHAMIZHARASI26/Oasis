@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Authentication</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Register -->
+  <div class="container" id="registerBox">
+    <h1>Register</h1>
+    <input type="text" id="user" placeholder="User Name">
+    <input type="password" id="pwd" placeholder="Password">
+    <button onclick="Register()">Register</button>
+    <a onclick="Showlogin()">Already have an account?</a>
+  </div>
+
+  <!-- Login -->
+  <div class="container" id="loginBox" style="display:none;">
+    <h1>Login</h1>
+    <input type="text" id="loginUser" placeholder="User Name">
+    <input type="password" id="loginPwd" placeholder="Password">
+    <button onclick="Login()">Login</button>
+    <a onclick="Showregister()">Create new account</a>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
